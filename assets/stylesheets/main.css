@@ -1,0 +1,497 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+
+body
+
+*/
+body {
+  background: lightgray;
+  color: #888;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+
+header
+
+*/
+header {
+  height: 800px;
+  background-image: url("images/bcgnd.jpg");
+  background-position: 0 0;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+
+.logo {
+  font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 0.6em;
+  color: rgba(255, 255, 255, .7);
+  float: left;
+  margin: 15px 15px;
+}
+
+#biglogo {
+  font-weight: 400;
+  font-size: 250px;
+  margin-top: 100px;
+}
+
+.nav_home {
+  margin-top: 100px;
+  margin-right: 100px;
+  float: right;
+}
+
+.nav_bottom {
+  float: right;
+  margin: 18px 0;
+  margin-right: 30px;
+}
+
+.nav_home li {
+  height: 80px;
+  width: 200px;
+  padding-top: 10px;
+}
+
+.nav_bottom li {
+  width: 100px;
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.nav_home a,
+.nav_bottom a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav_home a {
+  color: rgb(255, 215, 3, .8);
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: -.15em;
+}
+
+.nav_bottom a {
+  color: rgba(255, 255, 255, .8);
+  font-size: 22px;
+}
+
+.nav_home a:hover {
+  font-size: 60px;
+  color: rgba(242, 212, 61, 1);
+}
+
+.nav_bottom a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+#nav1 {
+  transform: rotate(-1deg);
+}
+
+#nav2 {
+  transform: rotate(-3deg);
+}
+
+#nav3 {
+  transform: rotate(1deg);
+}
+
+#nav4 {
+  transform: rotate(3deg);
+}
+
+#nav5 {
+  transform: rotate(-1deg);
+}
+
+#nav1:hover {
+  transform: rotate(-3deg);
+}
+
+#nav2:hover {
+  transform: rotate(-5deg);
+}
+
+#nav3:hover {
+  transform: rotate(-1deg);
+}
+
+#nav4:hover {
+  transform: rotate(1deg);
+}
+
+#nav5:hover {
+  transform: rotate(-3deg);
+}
+
+#sticky_nav {
+  background-color: rgba(0, 0, 0, .8);
+  height: 80px;
+  margin: auto;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/*
+
+About
+
+*/
+#about {
+  clear: both;
+  background-image: url("images/bp2t.png");
+  background-size: cover;
+  color: lightgray;
+}
+
+.section_header {
+  color: rgb(60, 60, 60);
+  padding-bottom: 30px;
+  margin: 0 10% 50px 10%;
+  text-align: center;
+  border-bottom: 2px solid rgb(60, 60, 60);
+}
+
+h2 {
+  color: rgb(60, 60, 60);
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: .6em;
+}
+
+.light {
+  color: lightgray;
+}
+
+.timecontain {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 50px;
+  margin-bottom: 100px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background-color: rgba(60, 60, 60);
+  top: 0;
+  bottom: 50px;
+  left: 50%
+}
+
+.timeline::after {
+  display: block;
+  content: "";
+  height: 50px;
+}
+
+.timepanel {
+  position: relative;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.timepanel h3 {
+  font-size: 22px;
+  font-weight: 700;
+  padding: 8px;
+  background-color: rgb(60, 60, 60);
+  border-radius: 10px 10px 0 0;
+}
+
+.timepanel p {
+  background-color: rgb(60, 60, 60);
+  padding: 30px;
+  border-radius: 0 0 10px 10px;
+}
+
+.left {
+  left: 0;
+  text-align: right;
+  padding-right: 100px;
+}
+
+.right {
+  left: 50%;
+  padding-left: 100px;
+}
+
+.timeimage {
+  background-color: rgb(60, 60, 60);
+  position: absolute;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  margin-left: -73px;
+  border: 5px solid rgb(60, 60, 60);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeimage p {
+  color: rgb(255, 215, 3);
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  line-height: .9;
+  padding-top: 1.5em;
+  /* z-index: 101; */
+}
+
+.roundimage {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+/*
+
+Gallery
+
+*/
+#gallery {
+  clear: both;
+  background-color: rgb(60, 60, 60);
+}
+
+.imagegallery {
+  width: 85%;
+  margin: auto;
+}
+
+.imagegallery::after {
+  content: "";
+  display: block;
+  clear: both;
+  padding-bottom: 100px;
+}
+
+.gallerypanel {
+  width: 30%;
+  margin: 1.5% 1.5%;
+  float: left;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+.gallerypanel img {
+  display: block;
+  width: 100%;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+/* .gallerypanel p {
+  text-align: center;
+  color: rgb(60,60,60);
+  font-weight: 700;
+  padding-bottom: 12px;
+} */
+/*
+
+services
+
+*/
+#services {
+  color: black;
+}
+
+.container_s {
+  background-image: url("images/output-onlinepngtools.png");
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.container_s::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.panel {
+  background-color: rgb(60, 60, 60);
+  color: lightgray;
+  width: 23%;
+  min-height: 200px;
+  margin: 1% 1% 100px 1%;
+  padding: 20px 20px 10px 20px;
+  border-radius: 10px;
+  position: relative;
+  float: left;
+}
+
+.panel::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#services h2 {
+  padding-bottom: 300px;
+}
+
+.servicesimg {
+  position: absolute;
+  top: -280px;
+  left: 50%;
+  margin-left: -125px;
+  height: 250px;
+  width: 250px;
+  border: 5px solid rgb(60, 60, 60);
+}
+
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 34;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+
+th, td, table {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 5px 15px;
+}
+
+/*
+
+Contact
+
+*/
+#contact {
+  clear: both;
+  background-color: rgb(60, 60, 60);
+}
+
+form {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+form::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 100px;
+}
+
+.userdata {
+  float: left;
+  width: 38%;
+}
+
+.userdata input {
+  width: 100%;
+  margin: 10px 10px 10px 0;
+}
+
+.message textarea {
+  width: 100%;
+  margin: 10px 0 10px 10px;
+}
+
+textarea {
+  padding: 8px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+/*
+
+footer
+
+*/
+.footer {
+  height: 140px;
+  background-color: rgb(60, 60, 60);
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+#none {
+    display: none;
+}
